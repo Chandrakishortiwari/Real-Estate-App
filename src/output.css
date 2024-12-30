@@ -687,10 +687,6 @@ video {
   grid-template-columns: repeat(2, minmax(0, 1fr));
 }
 
-.flex-row {
-  flex-direction: row;
-}
-
 .flex-col {
   flex-direction: column;
 }
@@ -962,12 +958,20 @@ video {
     margin-right: 10rem;
   }
 
-  .sm\:flex {
-    display: flex;
+  .sm\:mt-20 {
+    margin-top: 5rem;
+  }
+
+  .sm\:mb-20 {
+    margin-bottom: 5rem;
   }
 
   .sm\:h-\[31\.25rem\] {
     height: 31.25rem;
+  }
+
+  .sm\:max-h-\[23\.125rem\] {
+    max-height: 23.125rem;
   }
 
   .sm\:w-\[1200px\] {
@@ -976,6 +980,10 @@ video {
 
   .sm\:w-\[370px\] {
     width: 370px;
+  }
+
+  .sm\:max-w-\[35rem\] {
+    max-width: 35rem;
   }
 
   .sm\:flex-1 {
@@ -998,8 +1006,20 @@ video {
     flex-direction: column;
   }
 
+  .sm\:items-end {
+    align-items: flex-end;
+  }
+
+  .sm\:items-center {
+    align-items: center;
+  }
+
   .sm\:justify-center {
     justify-content: center;
+  }
+
+  .sm\:justify-between {
+    justify-content: space-between;
   }
 
   .sm\:gap-\[136px\] {
@@ -1010,49 +1030,19 @@ video {
     font-size: 1.75rem;
   }
 
-  .sm\:text-4xl {
-    font-size: 2.875rem;
-  }
-
-  .sm\:text-md {
-    font-size: 1rem;
-  }
-
   .sm\:text-3xl {
     font-size: 2.75rem;
+  }
+
+  .sm\:text-4xl {
+    font-size: 2.875rem;
   }
 
   .sm\:text-lg {
     font-size: 1.25rem;
   }
-}
 
-@media (min-width: 768px) {
-  .md\:top-0 {
-    top: 0px;
-  }
-
-  .md\:-right-24 {
-    right: -6rem;
-  }
-
-  .md\:mr-40 {
-    margin-right: 10rem;
-  }
-
-  .md\:h-\[31\.25rem\] {
-    height: 31.25rem;
-  }
-
-  .md\:flex-col {
-    flex-direction: column;
-  }
-
-  .md\:items-center {
-    align-items: center;
-  }
-
-  .md\:justify-center {
-    justify-content: center;
+  .sm\:text-md {
+    font-size: 1rem;
   }
 }
